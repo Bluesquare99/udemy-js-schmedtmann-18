@@ -16,6 +16,7 @@ export default class View {
     this._data = data;
     const markup = this._generateMarkup();
 
+    // Simply return the markup if you don't also want to render it now
     if (!render) return markup;
 
     this._clear();

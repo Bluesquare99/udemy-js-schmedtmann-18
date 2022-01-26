@@ -129,6 +129,10 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
+const newFeature = function () {
+  console.log('Wellcome to application!');
+};
+
 // We are initializing the addHandlerRender in recipeView (we've imported it above)
 //  by deciding for it what function will be attached to a given event handler.
 //  Then we call init() to make it happen.
@@ -140,5 +144,6 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  newFeature();
 };
 init();
